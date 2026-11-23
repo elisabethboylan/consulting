@@ -29,6 +29,7 @@ npm run build    # must pass before every commit
 | V2 — horizontal gallery (`/gallery`, `/fr/gallery`) | `components/views/GalleryView.tsx` |
 | EN/FR toggle | `components/LanguageSwitch.tsx` |
 | All styles + design tokens | `app/globals.css` (`:root` variables at the top) |
+| Favicon (black star) — browser tab, bookmarks, iPhone home screen | `app/icon.svg`, `app/favicon.ico`, `app/apple-icon.png` |
 | Images | `public/images/` · store badges in `public/badges/` · downloads (Le Métaboliste PDF) in `public/files/` |
 
 Content changes should be made in `content/*.ts` only — both layouts read from there.
