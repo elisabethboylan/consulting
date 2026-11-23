@@ -7,6 +7,8 @@ export type ProjectImage = {
   alt: L;
   width: number;
   height: number;
+  /** Still frame for an animated GIF, shown when the visitor prefers reduced motion. */
+  still?: string;
 };
 
 export type ProjectLink =
@@ -254,8 +256,7 @@ export const projects: Project[] = [
         height: 856,
       },
     ],
-    // TODO: replace with the PDF (e.g. put it in /public/files and use '/files/le-metaboliste.pdf')
-    links: [{ kind: 'button', label: { en: 'Download', fr: 'Télécharger' }, href: 'https://elisabethboylan.design' }],
+    links: [{ kind: 'button', label: { en: 'Download', fr: 'Télécharger' }, href: '/files/le-metaboliste.pdf' }],
   },
   {
     slug: 'graphic-design',
@@ -289,14 +290,14 @@ export const projects: Project[] = [
     caption: { en: 'Posters · identity · print', fr: 'Affiches · identité · imprimé' },
     images: [
       {
-        // TODO: replace with the full-resolution poster file (this one was cropped from a screenshot)
-        src: '/images/graphic-design-poster.jpg',
+        src: '/images/graphic-design-poster.gif',
+        still: '/images/graphic-design-poster.jpg',
         alt: {
           en: 'Illustrated music poster — guitarist on red',
           fr: 'Affiche musicale illustrée — guitariste sur fond rouge',
         },
-        width: 857,
-        height: 857,
+        width: 1080,
+        height: 1080,
       },
     ],
     links: [

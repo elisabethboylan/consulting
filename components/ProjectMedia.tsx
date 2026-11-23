@@ -44,7 +44,7 @@ export function ProjectMedia({ project, lang, sizes }: { project: Project; lang:
       </div>
     );
   } else {
-    media = (
+    const image = (
       <Image
         src={first.src}
         alt={first.alt}
@@ -54,6 +54,15 @@ export function ProjectMedia({ project, lang, sizes }: { project: Project; lang:
         unoptimized={first.src.endsWith('.gif')}
         className="media"
       />
+    );
+    // Animated GIFs with a still frame stop animating for visitors who prefer reduced motion.
+    media = first.still ? (
+      <picture>
+        <source media="(prefers-reduced-motion: reduce)" srcSet={first.still} />
+        {image}
+      </picture>
+    ) : (
+      image
     );
   }
 

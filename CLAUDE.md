@@ -29,7 +29,7 @@ npm run build    # must pass before every commit
 | V2 — horizontal gallery (`/gallery`, `/fr/gallery`) | `components/views/GalleryView.tsx` |
 | EN/FR toggle | `components/LanguageSwitch.tsx` |
 | All styles + design tokens | `app/globals.css` (`:root` variables at the top) |
-| Images | `public/images/` · store badges in `public/badges/` |
+| Images | `public/images/` · store badges in `public/badges/` · downloads (Le Métaboliste PDF) in `public/files/` |
 
 Content changes should be made in `content/*.ts` only — both layouts read from there.
 
@@ -44,12 +44,10 @@ Content changes should be made in `content/*.ts` only — both layouts read from
 - Footer social links are black icon-only links (GitHub, Behance, LinkedIn, Figma), each with an `aria-label`.
 - Mission Disarm shows its embedded YouTube trailer (`youtubeId` in `content/projects.ts`, privacy-enhanced youtube-nocookie player) plus a button to missiondisarm.com. Thorns of Piety links to thornsofpiety.com (button + cover images). No store badges on either (client decision).
 - Project order: Theotokos AI → Mission Disarm → Thorns of Piety / Les Épines de la piété → iMessage Stickers → Le Métaboliste → Graphic Design.
-- Accessibility: 44px minimum touch targets, visible focus outlines, alt text on every image, `prefers-reduced-motion` respected (marquee stops).
+- Accessibility: 44px minimum touch targets, visible focus outlines, alt text on every image, `prefers-reduced-motion` respected (marquee stops; an animated GIF with a `still` image in `content/projects.ts` shows that still frame instead).
 
 ## Open TODOs
 
 1. **Review the French copy** in `content/*.ts` — it was translated from the English and from the French résumés; adjust tone and terms as needed.
-2. **Le Métaboliste download** — put the PDF in `public/files/` and point its `Download` link at `/files/<name>.pdf`.
-3. **Graphic Design image** — replace `public/images/graphic-design-poster.jpg` with the full-resolution poster (current one was cropped from a screenshot).
-4. **Choose a layout** — when V1 or V2 is final, delete the other route (and its unused CSS section) or keep `/gallery` as an alternate view.
-5. Optional: swap Jost for licensed Futura PT via Adobe Fonts (replace the `@fontsource` imports in `app/(en)/layout.tsx` and `app/(fr)/layout.tsx`, and the `--font` variable).
+2. **Choose a layout** — when V1 or V2 is final, delete the other route (and its unused CSS section) or keep `/gallery` as an alternate view.
+3. Optional: swap Jost for licensed Futura PT via Adobe Fonts (replace the `@fontsource` imports in `app/(en)/layout.tsx` and `app/(fr)/layout.tsx`, and the `--font` variable).
