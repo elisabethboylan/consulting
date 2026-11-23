@@ -34,7 +34,7 @@ export const ui = {
     en: { label: 'FR', name: 'Version française', lang: 'fr' as Lang },
     fr: { label: 'EN', name: 'English version', lang: 'en' as Lang },
   },
-  selectProjects: { en: 'Select projects', fr: 'Projets sélectionnés' },
+  selectProjects: { en: 'Select projects', fr: 'Sélection de projets' },
   servicesHeading: { en: 'AI-forward design consulting', fr: 'Design-conseil propulsé par l’IA' },
   contactHeading: { en: 'Work with me', fr: 'Travaillons ensemble' },
   contact: {
@@ -44,5 +44,5 @@ export const ui = {
   rights: { en: 'All rights reserved.', fr: 'Tous droits réservés.' },
   trailerTitle: { en: '{title} — trailer', fr: '{title} — bande-annonce' },
   appStoreAlt: { en: 'Download on the App Store', fr: 'Télécharger dans l’App Store' },
-  googlePlayAlt: { en: 'Get it on Google Play', fr: 'L’obtenir sur Google Play' },
+  googlePlayAlt: { en: 'Get it on Google Play', fr: 'Disponible sur Google Play' },
 } as const;

@@ -10,14 +10,14 @@ export const services: { title: L; body: L }[] = [
     title: { en: 'Product & UX/UI Design', fr: 'Design de produit et UX/UI' },
     body: {
       en: 'Discovery workshops, information architecture, flows, prototypes and high-fidelity UI, accessible to WCAG 2.1 AA.',
-      fr: 'Ateliers de découverte, architecture de l’information, parcours, prototypes et UI haute fidélité, accessibles selon WCAG 2.1 AA.',
+      fr: 'Ateliers de découverte, architecture de l’information, parcours, prototypes et interfaces haute fidélité, conformes aux WCAG 2.1, niveau AA.',
     },
   },
   {
     title: { en: 'Conversational AI', fr: 'IA conversationnelle' },
     body: {
       en: 'Persona and voice, system-prompt architecture, guardrails and chat UI — designed and deployed on the Anthropic API.',
-      fr: 'Persona et voix, architecture des prompts système, garde-fous et interface de clavardage — conçus et déployés sur l’API d’Anthropic.',
+      fr: 'Persona et voix, architecture des invites système, garde-fous et interface de clavardage — conçus et déployés sur l’API d’Anthropic.',
     },
   },
   {
@@ -38,7 +38,7 @@ export const services: { title: L; body: L }[] = [
     title: { en: 'Games & Interactive', fr: 'Jeux et interactivité' },
     body: {
       en: 'Game UI, diegetic interfaces, LiveOps and AR/VR adaptations for Unity titles.',
-      fr: 'UI de jeu, interfaces diégétiques, LiveOps et adaptations RA/RV pour des titres Unity.',
+      fr: 'Interfaces de jeu, interfaces diégétiques, LiveOps et adaptations RA/RV pour des titres Unity.',
     },
   },
   {

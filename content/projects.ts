@@ -59,7 +59,7 @@ export const projects: Project[] = [
     },
     description: {
       en: 'An interactive prayer journal built on Anthropic’s API. I designed the brand, information architecture, interaction flows and high-fidelity UI, then defined the persona, tone, language-pattern library and guardrails that carry across a session — shipping to production on Vercel alongside the lead developer and Claude Code.',
-      fr: 'Un journal de prière interactif bâti sur l’API d’Anthropic. J’ai conçu l’image de marque, l’architecture de l’information, les parcours d’interaction et l’UI haute fidélité, puis défini la persona, le ton, la bibliothèque de tournures et les garde-fous qui portent toute la session — jusqu’à la mise en production sur Vercel, avec le développeur principal et Claude Code.',
+      fr: 'Un journal de prière interactif bâti sur l’API d’Anthropic. J’ai conçu l’image de marque, l’architecture de l’information, les parcours d’interaction et les interfaces haute fidélité, puis défini la persona, le ton, la bibliothèque de tournures et les garde-fous qui se maintiennent tout au long d’une session — jusqu’à la mise en production sur Vercel, avec le développeur principal et Claude Code.',
     },
     note: {
       en: 'Code BETA2026 at checkout for a free trial',
@@ -97,8 +97,8 @@ export const projects: Project[] = [
       fr: [
         'Identité de marque et direction artistique',
         'Design system Unity UI Toolkit',
-        'UI diégétique worldspace',
-        'Deux bandes-annonces animées dans After Effects',
+        'Interface diégétique intégrée au monde du jeu',
+        'Deux bandes-annonces animées réalisées avec After Effects',
         'Programmation en binôme avec Claude Code',
       ],
     },
@@ -143,7 +143,7 @@ export const projects: Project[] = [
     },
     description: {
       en: 'A novella and its French edition, released June 24, 2026 across print, ebook and audiobook. One visual voice carried from cover to website, animated book trailers and book-club community events.',
-      fr: 'Une novella et son édition française, parues le 24 juin 2026 en format imprimé, numérique et audio. Une même voix visuelle portée de la couverture au site web, jusqu’aux bandes-annonces animées et aux clubs de lecture.',
+      fr: 'Une novella et son édition française, parues le 24 juin 2026 en formats imprimé, numérique et audio. Une même voix visuelle portée de la couverture au site web, jusqu’aux bandes-annonces animées et aux rencontres de clubs de lecture.',
     },
     caption: { en: 'English & French editions', fr: 'Éditions anglaise et française' },
     images: [
@@ -181,8 +181,8 @@ export const projects: Project[] = [
       en: ['Character design', 'Scalable iconography', 'Motion promotion in After Effects', 'App Store submission'],
       fr: [
         'Création de personnages',
-        'Iconographie évolutive',
-        'Promotion animée dans After Effects',
+        'Iconographie déclinable à toutes les tailles',
+        'Vidéos promotionnelles animées avec After Effects',
         'Soumission à l’App Store',
       ],
     },
@@ -213,8 +213,8 @@ export const projects: Project[] = [
       en: ['Manga-style book layout', 'Illustration in Photoshop', '3D modelling in Maya', '3D-printed capsule packaging'],
       fr: [
         'Mise en page de style manga',
-        'Illustration dans Photoshop',
-        'Modélisation 3D dans Maya',
+        'Illustration avec Photoshop',
+        'Modélisation 3D avec Maya',
         'Emballage-capsule imprimé en 3D',
       ],
     },
@@ -259,7 +259,7 @@ export const projects: Project[] = [
     },
     description: {
       en: 'Fifteen years of identity systems, editorial layouts, packaging and campaign assets for startups, games and creative products — built to hold together across print, digital and merchandise.',
-      fr: 'Quinze ans de systèmes d’identité, de mises en page éditoriales, d’emballages et de matériel de campagne pour des startups, des jeux et des produits créatifs — conçus pour rester cohérents de l’imprimé au numérique et aux produits dérivés.',
+      fr: 'Quinze ans de systèmes d’identité, de mises en page éditoriales, d’emballages et de matériel de campagne pour des entreprises en démarrage, des jeux et des produits créatifs — conçus pour rester cohérents de l’imprimé au numérique et aux produits dérivés.',
     },
     caption: { en: 'Posters · identity · print', fr: 'Affiches · identité · imprimé' },
     images: [
