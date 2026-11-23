@@ -13,6 +13,9 @@ const nextConfig = {
       // The horizontal gallery view was retired; send old links to the homepage.
       { source: '/gallery', destination: '/', permanent: true },
       { source: '/fr/gallery', destination: '/fr', permanent: true },
+      // Old Squarespace page /design (linked from résumés, LinkedIn, Behance) → homepage.
+      { source: '/design', destination: '/', permanent: true },
+      { source: '/fr/design', destination: '/fr', permanent: true },
     ];
   },
 };
