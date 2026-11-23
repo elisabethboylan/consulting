@@ -5,7 +5,7 @@ Elisabeth Boylan Ltd.'s design-consulting website, **bilingual English / French*
 ## Stack
 
 - Next.js 15 (App Router), React 19, TypeScript, plain CSS (no Tailwind).
-- Font: Jost (self-hosted via `@fontsource/jost`, weights 300/400/500) as a free stand-in for Futura PT.
+- Font: Jost (self-hosted via `@fontsource/jost`, weights 300/400/500). Client decision: keep Jost — do not switch to Futura PT / Adobe Fonts.
 - Fully static — every route prerenders. No database, no env vars.
 - Bilingual by route: English at `/`, French at `/fr` (old `/gallery` URLs redirect to the homepage — see `next.config.mjs`). Two root layouts in route groups — `app/(en)/layout.tsx` (`<html lang="en-CA">`) and `app/(fr)/layout.tsx` (`<html lang="fr-CA">`). Each page sets canonical + hreflang alternates via `content/metadata.ts`.
 
@@ -48,4 +48,3 @@ Content changes should be made in `content/*.ts` only — the page reads from th
 ## Open TODOs
 
 1. **Final read of the French page** (`/fr`) for tone — a first-pass terminology review is done (see the French conventions above).
-2. Optional: swap Jost for licensed Futura PT via Adobe Fonts (replace the `@fontsource` imports in `app/(en)/layout.tsx` and `app/(fr)/layout.tsx`, and the `--font` variable).
