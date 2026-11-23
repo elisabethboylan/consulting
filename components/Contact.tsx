@@ -1,12 +1,12 @@
 import { site } from '@/content/site';
 import { ui, t, type Lang } from '@/content/i18n';
 
-export function Contact({ lang, variant }: { lang: Lang; variant: 'centered' | 'split' }) {
+export function Contact({ lang }: { lang: Lang }) {
   return (
-    <section id="contact" className={`contact contact--${variant}`}>
-      {variant === 'centered' && <h2 className="eyebrow-heading">{t(ui.contactHeading, lang)}</h2>}
-      <p className="contact__line">{t(variant === 'centered' ? ui.contactLong : ui.contactShort, lang)}</p>
-      <a href={`mailto:${site.email}`} className={variant === 'centered' ? 'btn' : 'btn btn--solid'}>
+    <section id="contact" className="contact">
+      <h2 className="eyebrow-heading">{t(ui.contactHeading, lang)}</h2>
+      <p className="contact__line">{t(ui.contact, lang)}</p>
+      <a href={`mailto:${site.email}`} className="btn">
         {site.email}
       </a>
     </section>

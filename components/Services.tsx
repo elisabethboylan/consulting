@@ -1,13 +1,11 @@
 import { services, servicesIntro } from '@/content/services';
 import { ui, t, type Lang } from '@/content/i18n';
 
-export function Services({ lang, variant }: { lang: Lang; variant: 'list' | 'cards' }) {
+export function Services({ lang }: { lang: Lang }) {
   return (
-    <section id="services" className={`services services--${variant}`}>
+    <section id="services" className="services">
       <div className="services__head">
-        <h2 className="eyebrow-heading">
-          {t(variant === 'list' ? ui.servicesHeadingList : ui.servicesHeadingCards, lang)}
-        </h2>
+        <h2 className="eyebrow-heading">{t(ui.servicesHeading, lang)}</h2>
         <p className="lede">{t(servicesIntro, lang)}</p>
       </div>
       <div className="services__grid">

@@ -5,9 +5,9 @@ Elisabeth Boylan Ltd.'s design-consulting website, **bilingual English / French*
 ## Stack
 
 - Next.js 15 (App Router), React 19, TypeScript, plain CSS (no Tailwind).
-- Font: Jost (self-hosted via `@fontsource/jost`, weights 300/400/500) as a free stand-in for Futura PT.
+- Font: Jost (self-hosted via `@fontsource/jost`, weights 300/400/500). Client decision: keep Jost — do not switch to Futura PT / Adobe Fonts.
 - Fully static — every route prerenders. No database, no env vars.
-- Bilingual by route: English at `/` and `/gallery`, French at `/fr` and `/fr/gallery`. Two root layouts in route groups — `app/(en)/layout.tsx` (`<html lang="en-CA">`) and `app/(fr)/layout.tsx` (`<html lang="fr-CA">`). Each page sets canonical + hreflang alternates via `content/metadata.ts`.
+- Bilingual by route: English at `/`, French at `/fr` (old `/gallery` URLs redirect to the homepage — see `next.config.mjs`). Two root layouts in route groups — `app/(en)/layout.tsx` (`<html lang="en-CA">`) and `app/(fr)/layout.tsx` (`<html lang="fr-CA">`). Each page sets canonical + hreflang alternates via `content/metadata.ts`.
 
 ## Commands
 
@@ -25,16 +25,15 @@ npm run build    # must pass before every commit
 | Services / "what I offer" copy — EN + FR | `content/services.ts` |
 | Interface strings (nav, headings, contact, alt text), routes | `content/i18n.ts` |
 | Name, wordmark, email, social links | `content/site.ts` |
-| V1 — staggered homepage (`/`, `/fr`) | `components/views/HomeView.tsx` |
-| V2 — horizontal gallery (`/gallery`, `/fr/gallery`) | `components/views/GalleryView.tsx` |
+| Homepage — staggered layout (`/`, `/fr`) | `components/views/HomeView.tsx` |
 | EN/FR toggle | `components/LanguageSwitch.tsx` |
 | All styles + design tokens | `app/globals.css` (`:root` variables at the top) |
 | Favicon (black star) — browser tab, bookmarks, iPhone home screen | `app/icon.svg`, `app/favicon.ico`, `app/apple-icon.png` |
 | Images | `public/images/` · store badges in `public/badges/` · downloads (Le Métaboliste PDF) in `public/files/` |
 
-Content changes should be made in `content/*.ts` only — both layouts read from there.
+Content changes should be made in `content/*.ts` only — the page reads from there.
 
-**Every piece of copy is `{ en, fr }`.** When adding or changing text, always write both languages (the client is fully bilingual and reviews the French). French uses Québec conventions: « courriel », « clavardage », typographic apostrophes (’), no space before `?`/`!` in this codebase's style. Never ship an English string on a French page.
+**Every piece of copy is `{ en, fr }`.** When adding or changing text, always write both languages (the client is fully bilingual and reviews the French). French uses Québec conventions: « courriel », « clavardage », typographic apostrophes (’), no space before `?`/`!` in this codebase's style. Client terminology choices: « services-conseils en design » (not « design-conseil »), « le persona » (masculine), « court roman » (not « novella »), « propulsé par » (not « bâti sur »); keep industry anglicisms (design system, tokens, motion design, MOTION) and sticker-pack / game titles in English. Never ship an English string on a French page.
 
 ## Design rules (from the client — keep them)
 
@@ -49,6 +48,4 @@ Content changes should be made in `content/*.ts` only — both layouts read from
 
 ## Open TODOs
 
-1. **Review the French copy** in `content/*.ts` — it was translated from the English and from the French résumés; adjust tone and terms as needed.
-2. **Choose a layout** — when V1 or V2 is final, delete the other route (and its unused CSS section) or keep `/gallery` as an alternate view.
-3. Optional: swap Jost for licensed Futura PT via Adobe Fonts (replace the `@fontsource` imports in `app/(en)/layout.tsx` and `app/(fr)/layout.tsx`, and the `--font` variable).
+1. **Final read of the French page** (`/fr`) for tone — a first-pass terminology review is done (see the French conventions above).

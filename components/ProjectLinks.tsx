@@ -2,7 +2,7 @@ import Image from 'next/image';
 import type { ProjectLink } from '@/content/projects';
 import { ui, t, type Lang } from '@/content/i18n';
 
-export function ProjectLinks({ links, lang, variant }: { links: ProjectLink[]; lang: Lang; variant: 'button' | 'text' }) {
+export function ProjectLinks({ links, lang }: { links: ProjectLink[]; lang: Lang }) {
   return (
     <div className="links">
       {links.map((link) => {
@@ -30,16 +30,9 @@ export function ProjectLinks({ links, lang, variant }: { links: ProjectLink[]; l
             </a>
           );
         }
-        const label = t(link.label, lang);
         return (
-          <a
-            key={link.href}
-            href={link.href}
-            className={variant === 'button' ? 'btn' : 'textlink'}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {variant === 'text' ? `${label} →` : label}
+          <a key={link.href} href={link.href} className="btn" target="_blank" rel="noopener noreferrer">
+            {t(link.label, lang)}
           </a>
         );
       })}
