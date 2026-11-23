@@ -32,7 +32,7 @@ npm run build    # must pass before every commit
 
 Content changes should be made in `content/*.ts` only — the page reads from there.
 
-**Every piece of copy is `{ en, fr }`.** When adding or changing text, always write both languages (the client is fully bilingual and reviews the French). French uses Québec conventions: « courriel », « clavardage », typographic apostrophes (’), no space before `?`/`!` in this codebase's style. Never ship an English string on a French page.
+**Every piece of copy is `{ en, fr }`.** When adding or changing text, always write both languages (the client is fully bilingual and reviews the French). French uses Québec conventions: « courriel », « clavardage », typographic apostrophes (’), no space before `?`/`!` in this codebase's style. Client terminology choices: « services-conseils en design » (not « design-conseil »), « le persona » (masculine), « court roman » (not « novella »), « propulsé par » (not « bâti sur »); keep industry anglicisms (design system, tokens, motion design, MOTION) and sticker-pack / game titles in English. Never ship an English string on a French page.
 
 ## Design rules (from the client — keep them)
 
@@ -47,5 +47,5 @@ Content changes should be made in `content/*.ts` only — the page reads from th
 
 ## Open TODOs
 
-1. **Review the French copy** in `content/*.ts` — it was translated from the English and from the French résumés; adjust tone and terms as needed.
+1. **Final read of the French page** (`/fr`) for tone — a first-pass terminology review is done (see the French conventions above).
 2. Optional: swap Jost for licensed Futura PT via Adobe Fonts (replace the `@fontsource` imports in `app/(en)/layout.tsx` and `app/(fr)/layout.tsx`, and the `--font` variable).

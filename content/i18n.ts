@@ -19,9 +19,9 @@ export const ui = {
   },
   description: {
     en: 'Elisabeth Boylan — product, UX/UI, conversational AI, brand and motion design consulting. Bilingual FR/EN, Québec City.',
-    fr: 'Elisabeth Boylan — design-conseil : produit, UX/UI, IA conversationnelle, image de marque et motion design. Bilingue FR/EN, Québec.',
+    fr: 'Elisabeth Boylan — services-conseils en design : produit, UX/UI, IA conversationnelle, image de marque et motion design. Bilingue FR/EN, Québec.',
   },
-  titleSuffix: { en: 'Design Consulting', fr: 'Design-conseil' },
+  titleSuffix: { en: 'Design Consulting', fr: 'Services-conseils en design' },
   nav: {
     work: { en: 'Work', fr: 'Projets' },
     services: { en: 'Services', fr: 'Services' },
@@ -35,7 +35,7 @@ export const ui = {
     fr: { label: 'EN', name: 'English version', lang: 'en' as Lang },
   },
   selectProjects: { en: 'Select projects', fr: 'Sélection de projets' },
-  servicesHeading: { en: 'AI-forward design consulting', fr: 'Design-conseil propulsé par l’IA' },
+  servicesHeading: { en: 'AI-forward design consulting', fr: 'Services-conseils en design propulsés par l’IA' },
   contactHeading: { en: 'Work with me', fr: 'Travaillons ensemble' },
   contact: {
     en: 'Building something ambitious, strange or beautiful? Bilingual French/English, based in Québec City, available for consulting mandates.',

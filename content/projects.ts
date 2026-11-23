@@ -59,13 +59,13 @@ export const projects: Project[] = [
     },
     description: {
       en: 'An interactive prayer journal built on Anthropic’s API. I designed the brand, information architecture, interaction flows and high-fidelity UI, then defined the persona, tone, language-pattern library and guardrails that carry across a session — shipping to production on Vercel alongside the lead developer and Claude Code.',
-      fr: 'Un journal de prière interactif bâti sur l’API d’Anthropic. J’ai conçu l’image de marque, l’architecture de l’information, les parcours d’interaction et les interfaces haute fidélité, puis défini la persona, le ton, la bibliothèque de tournures et les garde-fous qui se maintiennent tout au long d’une session — jusqu’à la mise en production sur Vercel, avec le développeur principal et Claude Code.',
+      fr: 'Un journal de prière interactif propulsé par l’API d’Anthropic. J’ai conçu l’image de marque, l’architecture de l’information, les parcours d’interaction et les interfaces haute fidélité, puis défini le persona, le ton, la bibliothèque de tournures et les garde-fous qui se maintiennent tout au long d’une session — jusqu’à la mise en production sur Vercel, avec le développeur principal et Claude Code.',
     },
     note: {
       en: 'Code BETA2026 at checkout for a free trial',
       fr: 'Code BETA2026 au paiement pour un essai gratuit',
     },
-    caption: { en: 'Divine guidance for life’s difficult moments', fr: 'Guidance divine pour les moments difficiles' },
+    caption: { en: 'Divine guidance for life’s difficult moments', fr: 'Guidance divine et prière interactive' },
     images: [
       {
         src: '/images/theotokos-ai.png',
@@ -143,7 +143,7 @@ export const projects: Project[] = [
     },
     description: {
       en: 'A novella and its French edition, released June 24, 2026 across print, ebook and audiobook. One visual voice carried from cover to website, animated book trailers and book-club community events.',
-      fr: 'Une novella et son édition française, parues le 24 juin 2026 en formats imprimé, numérique et audio. Une même voix visuelle portée de la couverture au site web, jusqu’aux bandes-annonces animées et aux rencontres de clubs de lecture.',
+      fr: 'Un court roman et son édition française, parus le 24 juin 2026 en formats imprimé, numérique et audio. Une même voix visuelle portée de la couverture au site web, jusqu’aux bandes-annonces animées et aux rencontres de clubs de lecture.',
     },
     caption: { en: 'English & French editions', fr: 'Éditions anglaise et française' },
     images: [
