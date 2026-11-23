@@ -16,6 +16,10 @@ const nextConfig = {
       // Old Squarespace page /design (linked from résumés, LinkedIn, Behance) → homepage.
       { source: '/design', destination: '/', permanent: true },
       { source: '/fr/design', destination: '/fr', permanent: true },
+      // Old Squarespace /art page (and anything under it) → the fine art site.
+      { source: '/art', destination: 'https://elisabethboylan.art', permanent: true },
+      { source: '/art/:path*', destination: 'https://elisabethboylan.art', permanent: true },
+      { source: '/fr/art', destination: 'https://elisabethboylan.art', permanent: true },
     ];
   },
 };
