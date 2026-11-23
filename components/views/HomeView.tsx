@@ -1,4 +1,4 @@
-// Version 1 — staggered layout, after the original Squarespace page.
+// Homepage — staggered layout, after the original Squarespace page.
 import { projects } from '@/content/projects';
 import { site } from '@/content/site';
 import { ui, t, type Lang } from '@/content/i18n';
@@ -19,7 +19,7 @@ export function HomeView({ lang }: { lang: Lang }) {
     <>
       <header className="masthead">
         <div className="masthead__lang">
-          <LanguageSwitch lang={lang} page="home" />
+          <LanguageSwitch lang={lang} />
         </div>
         <h1 className="wordmark">{site.wordmark}</h1>
         <p className="tagline">{ui.tagline[lang].join(' • ')}</p>
@@ -60,7 +60,7 @@ export function HomeView({ lang }: { lang: Lang }) {
               </ul>
               <p>{t(p.description, lang)}</p>
               <div className="row__actions">
-                <ProjectLinks links={p.links} lang={lang} variant="button" />
+                <ProjectLinks links={p.links} lang={lang} />
                 {p.note && <span className="note">{t(p.note, lang)}</span>}
               </div>
             </div>
@@ -72,9 +72,9 @@ export function HomeView({ lang }: { lang: Lang }) {
         ))}
       </main>
 
-      <Services lang={lang} variant="list" />
-      <Contact lang={lang} variant="centered" />
-      <SiteFooter lang={lang} variant="centered" />
+      <Services lang={lang} />
+      <Contact lang={lang} />
+      <SiteFooter lang={lang} />
     </>
   );
 }

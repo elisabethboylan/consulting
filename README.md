@@ -2,12 +2,7 @@
 
 Design-consulting site for **elisabethboylan.com** (and **elisabethboylan.design**, which redirects to it).
 
-Bilingual — English and French, with an EN / FR switch in the header:
-
-| | English | Français |
-| --- | --- | --- |
-| Version 1 — staggered rows (after the Squarespace layout) | `/` | `/fr` |
-| Version 2 — horizontal gallery | `/gallery` | `/fr/gallery` |
+Bilingual — English at `/`, French at `/fr`, with an EN / FR switch in the header. The homepage uses staggered rows, after the original Squarespace layout.
 
 ## Run locally
 
@@ -16,7 +11,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000 and http://localhost:3000/fr (add `/gallery` for Version 2).
+Open http://localhost:3000 and http://localhost:3000/fr.
 
 ## Edit content
 

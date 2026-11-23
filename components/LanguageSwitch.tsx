@@ -1,11 +1,11 @@
-import { ui, href, type Lang, type Page } from '@/content/i18n';
+import { ui, href, type Lang } from '@/content/i18n';
 
-/** EN/FR toggle. Links to the same page in the other language. */
-export function LanguageSwitch({ lang, page }: { lang: Lang; page: Page }) {
+/** EN/FR toggle. Links to the homepage in the other language. */
+export function LanguageSwitch({ lang }: { lang: Lang }) {
   const other = ui.switchTo[lang];
   return (
     <a
-      href={href(page, other.lang)}
+      href={href(other.lang)}
       hrefLang={other.lang}
       lang={other.lang}
       aria-label={other.name}

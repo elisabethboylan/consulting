@@ -10,6 +10,9 @@ const nextConfig = {
         destination: 'https://elisabethboylan.com/:path*',
         permanent: true,
       },
+      // The horizontal gallery view was retired; send old links to the homepage.
+      { source: '/gallery', destination: '/', permanent: true },
+      { source: '/fr/gallery', destination: '/fr', permanent: true },
     ];
   },
 };

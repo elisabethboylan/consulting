@@ -22,9 +22,7 @@ export type Project = {
   category: L;
   title: L;
   subtitle?: L;
-  /** One-line role, used on the gallery cards. */
-  role: L;
-  /** Roles/skills — bullet list on the homepage, tags on the gallery. */
+  /** Roles/skills — bullet list under each project. */
   skills: L<string[]>;
   description: L;
   note?: L;
@@ -43,10 +41,6 @@ export const projects: Project[] = [
     number: '01',
     category: { en: 'Conversational AI', fr: 'IA conversationnelle' },
     title: { en: 'Theotokos AI', fr: 'Theotokos AI' },
-    role: {
-      en: 'Product & experience designer, partnering with the lead developer',
-      fr: 'Designer produit et expérience, en partenariat avec le développeur principal',
-    },
     skills: {
       en: [
         'Product design',
@@ -92,10 +86,6 @@ export const projects: Project[] = [
     number: '02',
     category: { en: 'Unity game · iOS · Android · WebGL', fr: 'Jeu Unity · iOS · Android · WebGL' },
     title: { en: 'Mission Disarm', fr: 'Mission Disarm' },
-    role: {
-      en: 'Art director, UI designer and developer',
-      fr: 'Directrice artistique, designer UI et développeuse',
-    },
     skills: {
       en: [
         'Brand identity & art direction',
@@ -135,10 +125,6 @@ export const projects: Project[] = [
     // Each language leads with its own edition's title.
     title: { en: 'Thorns of Piety', fr: 'Les Épines de la piété' },
     subtitle: { en: 'Les Épines de la piété', fr: 'Thorns of Piety' },
-    role: {
-      en: 'Author (E.G. Boylan), cover illustrator and creative director',
-      fr: 'Autrice (E.G. Boylan), illustratrice de couverture et directrice de création',
-    },
     skills: {
       en: [
         'Cover illustration',
@@ -191,10 +177,6 @@ export const projects: Project[] = [
     number: '04',
     category: { en: 'Illustration & motion', fr: 'Illustration et animation' },
     title: { en: 'iMessage Stickers', fr: 'Autocollants iMessage' },
-    role: {
-      en: 'Illustrator, animator and publisher — four packs on the App Store',
-      fr: 'Illustratrice, animatrice et éditrice — quatre collections sur l’App Store',
-    },
     skills: {
       en: ['Character design', 'Scalable iconography', 'Motion promotion in After Effects', 'App Store submission'],
       fr: [
@@ -227,10 +209,6 @@ export const projects: Project[] = [
     number: '05',
     category: { en: 'Book layout', fr: 'Mise en page de livre' },
     title: { en: 'Le Métaboliste', fr: 'Le Métaboliste' },
-    role: {
-      en: 'Illustrator and book designer — a manga on Kisho Kurokawa',
-      fr: 'Illustratrice et designer du livre — un manga sur Kisho Kurokawa',
-    },
     skills: {
       en: ['Manga-style book layout', 'Illustration in Photoshop', '3D modelling in Maya', '3D-printed capsule packaging'],
       fr: [
@@ -263,10 +241,6 @@ export const projects: Project[] = [
     number: '06',
     category: { en: 'Art direction', fr: 'Direction artistique' },
     title: { en: 'Graphic Design', fr: 'Design graphique' },
-    role: {
-      en: 'Art director and graphic designer for startups, games and creative products',
-      fr: 'Directrice artistique et designer graphique pour des startups, des jeux et des produits créatifs',
-    },
     skills: {
       en: [
         'Brand identity & logo systems',
